@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Task Management</h1>
+        <p>Welcome Manager! To our portal where you can track your <br>employees' work and work status.</p>
+<p>Stay on top of the tasks that are in progress, completed, or still pending.<br>Keep a detailed overview of all work items at any given moment.</p>
+<p>Monitor productivity, assign tasks, and ensure deadlines are met <br>efficiently, helping your team stay on track.</p>
+<p>Manage multiple employees, view their individual progress, and oversee<br> their workload with ease, all in one place.</p>
+<p>With just a few clicks, you can update task statuses and make <br>adjustments as needed to streamline operations.</p>
+<p>As a manager, you’ll have complete control over task prioritization, <br>resource allocation, and real-time updates on each project.</p>
+<p>Ready to optimize your team's workflow? Let's dive into task <br> management,monitor progress, and work towards success together!</p>
+<p>Feel free to add new employees, assign them tasks,<br> and keep track of their work statuses for maximum efficiency.</p>
+<p>With real-time status updates and easy access to task details,<br>you’ll always be in control of what’s happening across your team.</p>
+<p>Let’s create a productive, organized,<br> and collaborative work environment today!</p>
+
+    </header>
+    <main>
+        <div id="container">
+        <section id="taskbox">
+            <button id="managerButton">Manager</button>
+            
+        </section>
+        <button id="editButton">+</button>
+     
+    </div>
+   
+        <div class="large-box hidden">
+            <div class="employee-box">
+                <h3>Employee 1</h3>
+                <ul>
+                    <li><button id="TaskButton">Task 1</button></li> 
+                  <li><button id="TaskButton">Task 2</button></li>
+                   <li><button id="TaskButton">Task 3</button></li>
+                </ul>
+            </div>
+            <div class="employee-box">
+                <h3>Employee 2</h3>
+                <ul>
+                    <li><button id="TaskButton">Task 1</button></li> 
+                  <li><button id="TaskButton">Task 2</button></li>
+                   <li><button id="TaskButton">Task 3</button></li>
+                </ul>
+            </div>
+            <div class="employee-box">
+                <h3>Employee 3</h3>
+                <ul>
+                    <li><button id="TaskButton">Task 1</button></li> 
+                  <li><button id="TaskButton">Task 2</button></li>
+                   <li><button id="TaskButton">Task 3</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="statusbox hidden">
+            <h2>Task Status</h2>
+            <ul>
+                <li><button id="NotStarted">Not Not Started</button></li>
+                <li><button id="InProgress">In Progress</button></li> 
+                <li><button id="Testing">Testing</button></li>
+                <li><button id="Done">Done</button></li>
+            </ul>
+            <div id="status-text"></div>  
+        </div>
+ 
+        
+    
+
+        </div>
+
+    </main>
+</body>
+</html>

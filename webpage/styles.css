@@ -1,0 +1,237 @@
+h1 {
+    text-align: center;
+}
+
+#taskbox {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#taskbox:hover {
+    background-color: #e0e0e0;
+}
+
+#managerButton {
+    padding: 8px 15px;
+    border: none;
+    background-color: #108cb9;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#managerButton:hover {
+    background-color: #108cb9;
+}
+
+.large-box {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fcfdfd;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 20px;
+    display:flex;            
+    flex-wrap: wrap;         
+    gap: 20px;
+    max-height: 100vh; 
+    overflow-y: auto;
+    width: 43%;
+}
+
+.employee-box {
+    background-color: #30a7d6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+}
+
+.employee-box h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+#TaskButton{
+    padding: 8px 15px;
+    border: none;
+    background-color: #333;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    width:100px;
+}
+
+.statusbox {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 10;
+    width:400px;
+    display: flex;       /* Keep display: flex */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center;   /* Center items horizontally */
+}
+#NotStarted{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#NotStarted:hover{
+    background-color: #828282;
+    cursor: pointer;
+}
+
+#InProgress{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#InProgress:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+#Testing{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#Testing:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+#Done{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#Done:hover{
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+.statusbox h2 {
+    margin-top: 0;       /* Remove default top margin */
+    text-align: center; /* Center the text */
+    color: #333;
+}
+
+.statusbox ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;           /* Remove default padding */
+    margin: 0;            /* Remove default margin */
+    width: 100%;          /* Take full width of the box */
+}
+
+.statusbox li {
+    width: 100%;          /* Make each list item full width */
+    text-align: center;   /* Center the button text */
+    margin-bottom: 10px; /* Spacing between buttons */
+}
+.hidden {
+    display: none;
+}
+#status-text {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    
+    font-weight: bold;
+}
+
+#NotStarted:active {
+    background-color: white; 
+    color: #333;
+}
+#InProgress:active {
+    background-color: orange; 
+    color: #333;
+}
+#Testing:active {
+    background-color: yellow; 
+    color: #333;
+}
+#Done:active {
+    background-color: #4CAF50; 
+    color: #333;
+}
+#editButton{
+    border:1px solid #333;
+    border-radius: 20px;
+    margin-left: 25px;
+    cursor:pointer;
+}
+#container{
+    display:flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left:5%;
+}
+.employee-box input[type="text"] {
+    width: 90%; /* Full width within the box */
+    margin-bottom: 8px; /* Spacing */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.delete-button {
+    background-color: #f44336; /* Reddish color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px; /* Spacing from the input fields */
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+#TaskButton,
+.task-button { 
+    padding: 8px 15px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    width:100px;
+    border:1px solid;
+}
+
+.delete-task-button{
+    background-color: #f44336; /* Reddish color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px; /* Spacing from the input fields */
+}
+
